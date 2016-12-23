@@ -1,5 +1,5 @@
 CompositeDisposable = require('atom').CompositeDisposable
-active = false
+active = true
 
 module.exports = new class BubbleTabs
 	activate : (state)->
