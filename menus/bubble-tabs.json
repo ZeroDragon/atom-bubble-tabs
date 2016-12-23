@@ -1,0 +1,18 @@
+{
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "Bubble Tabs",
+          "submenu": [
+            {
+              "label": "Toggle",
+              "command": "bubble-tabs:toggle"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
