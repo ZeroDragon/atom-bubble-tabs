@@ -1,7 +1,7 @@
 {
   "name": "bubble-tabs",
   "main": "./lib/bubble-tabs",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "description": "A simple package that sets the current tab into the first position",
   "keywords": [],
   "repository": "https://github.com/ZeroDragon/atom-bubble-tabs",
