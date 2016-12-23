@@ -1,12 +1,9 @@
 {
   "name": "bubble-tabs",
   "main": "./lib/bubble-tabs",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "A simple package that sets the current tab into the first position",
   "keywords": [],
-  "activationCommands": {
-    "atom-workspace": "bubble-tabs:toggle"
-  },
   "repository": "https://github.com/ZeroDragon/atom-bubble-tabs",
   "license": "MIT",
   "engines": {
