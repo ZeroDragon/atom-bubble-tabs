@@ -10,9 +10,10 @@ module.exports = new class BubbleTabs
 		window.addEventListener 'focus', (event)->
 			return unless active
 			pane = atom.workspace.getActivePane()
-			setTimeout ->
-				pane.moveItem pane.getActiveItem(), 0
-			,100
+			if pane.focused
+				setTimeout ->
+					pane.moveItem pane.getActiveItem(), 0
+				,1
 		,true
 		return
 	deactivate : ->
