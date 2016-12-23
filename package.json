@@ -1,10 +1,9 @@
 {
   "name": "bubble-tabs",
   "main": "./lib/bubble-tabs",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A simple package that sets the current tab into the first position",
-  "keywords": [
-  ],
+  "keywords": [],
   "activationCommands": {
     "atom-workspace": "bubble-tabs:toggle"
   },
@@ -13,6 +12,5 @@
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
