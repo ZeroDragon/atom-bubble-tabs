@@ -3,10 +3,10 @@ active = false
 
 module.exports = new class BubbleTabs
 	activate : (state)->
-		@subscriptions = new CompositeDisposable
-		@subscriptions.add atom.commands.add('atom-workspace',{
-			'bubble-tabs:toggle' : => @toggle()
-		})
+		# @subscriptions = new CompositeDisposable
+		# @subscriptions.add atom.commands.add('atom-workspace',{
+		# 	'bubble-tabs:toggle' : => @toggle()
+		# })
 		window.addEventListener 'focus', (event)->
 			return unless active
 			pane = atom.workspace.getActivePane()
@@ -14,8 +14,9 @@ module.exports = new class BubbleTabs
 		,true
 		return
 	deactivate : ->
-		@subscriptions.dispose()
-		return
+		window.addEventListener 'focus', (event)->
+	# 	@subscriptions.dispose()
+	# 	return
 	toggle : ->
 		active = !active
 		return
